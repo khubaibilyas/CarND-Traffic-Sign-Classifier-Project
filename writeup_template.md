@@ -55,22 +55,22 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a histogram chart for train, validation and test data set showing the number of samples for each prediction class. It is evident that samples are evenly distributed across the datasets so can we be assured that bias would be minimal.
 
-![Histogram of training set][debug_images/bar_train.png]
-![Histogram of validation set][debug_images/bar_valid.png]
-![Histogram of test set][debug_images/bar_test.png]
+![Histogram of training set][./debug_images/bar_train.png]
+![Histogram of validation set][./debug_images/bar_valid.png]
+![Histogram of test set][./debug_images/bar_test.png]
 
 ### Design and Test a Model Architecture
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
 Following processing were done to the images before training : 
-![Real Image][debug_images/real_img.png]
+![Real Image][./debug_images/real_img.png]
 
 1) Images were normalised using mean and standard deviation.
-![Normalized Image][debug_images/normalized_img.png]
+![Normalized Image][./debug_images/normalized_img.png]
 
 2) Images are padded with 2 columns and rows of 0s in either frame of the image resulting in image size of 36x36x3.
-![Padded Image][debug_images/padded_img.png]
+![Padded Image][./debug_images/padded_img.png]
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
